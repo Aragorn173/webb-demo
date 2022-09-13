@@ -23,4 +23,10 @@ router.get('/', async function(req, res, next) {
     }
 });
 
+router.get('/test', function(request, response) {
+    response.render('test.njk', {
+    title: 'kursdemo'});
+    })
+    
+
 module.exports = router;
